@@ -1,0 +1,417 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+  <style>body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://i.ibb.co/5TDrKkV/banner.jpg'); /* Replace 'hero.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* Destinations */
+#destinations {
+    padding: 50px 0;
+}
+
+.destination {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.destination img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.destination h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Services */
+#services {
+    padding: 50px 0;
+}
+
+.service {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service i {
+    font-size: 48px;
+    color: #007bff; /* Change icon color as needed */
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Testimonials */
+#testimonials {
+    padding: 50px 0;
+}
+
+.testimonial {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimonial img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+/* Color Palette */
+:root {
+    --primary-color: #ede0d4;
+    --secondary-color: #e6ccb2;
+    --tertiary-color: #ddb892;
+    --quaternary-color: #b08968;
+    --quinary-color: #7f5539;
+    --senary-color: #9c6644;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--quinary-color);
+}
+
+/* Header */
+header {
+    background-color: var(--quaternary-color);
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Destinations */
+#destinations .destination {
+    background-color: var(--secondary-color);
+    color: var(--quinary-color);
+}
+
+/* Services */
+#services .service {
+    background-color: var(--tertiary-color);
+    color: var(--quinary-color);
+}
+
+/* Testimonials */
+#testimonials .testimonial {
+    background-color: var(--tertiary-color);
+    color: var(--quinary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--quaternary-color);
+    color: var(--primary-color);
+}
+/* Contact Section */
+#contact p {
+  font-size: 15px;
+  
+    background-color: var(--quaternary-color);
+    padding: 50px 0;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    flex: 2;
+    padding: 20px;
+}
+
+.contact-form .vertical-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    font-size: 15px;
+    color: var(--quinary-color);
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    background-color: var(--quinary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--senary-color);
+}
+
+.contact-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: var(--quaternary-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <h1>TAKE A TRIP</h1>
+        <p>Your Adventure Awaits</p>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h2>Discover Amazing Destinations</h2>
+        <a href="#destinations" class="btn">Explore</a>
+    </div>
+</section>
+
+<!-- Destinations -->
+<section id="destinations">
+    <div class="container">
+        <h2>Popular Destinations</h2>
+        <div class="destination">
+            <img src="https://i.ibb.co/jTdGLZH/london.jpg" alt="Destination 1">
+            <h3>LONDON</h3>
+            <p>The British Museum</p>
+          <p>London Eye</p>
+          <p>Tower Bridge</p>
+          <p>Big Ben</p>
+        </div>
+        <div class="destination">
+            <img src="https://i.ibb.co/b1tRfcw/paris.jpg" alt="Destination 2">
+            <h3>PARIS</h3>
+            <p>Louvre Museum</p>
+          <p>Palace of Versailles</p>
+          <p>Musée d'Orsay </p>
+          <p>Arc de Triomphe</p>
+        </div>
+        <div class="destination">
+          <img src="https://i.ibb.co/NW0BG2s/bali.jpg" alt= Destination 3">                                       <h3>BALI</h3>
+            <p>Bali safari and Marine Park</p>
+          <p>Real Bali Swing</p>
+                                         <p>Ceking Rice Terrace</p>
+                                         <p>Uluwatu Temple</p>
+                    
+    </div>
+</section>
+
+<!-- Services -->
+<section id="services">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="service">
+            <i class="fas fa-plane"></i>
+            <h3>Flight Booking</h3>
+            <p>Book your flights hassle-free</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-hotel"></i>
+            <h3>Hotel Reservation</h3>
+            <p>Find the perfect accommodation</p>
+        </div>
+        <!-- Add more services as needed -->
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials">
+    <div class="container">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <img src="https://i.ibb.co/Bt4YGdC/women.jpg" alt="Customer 1">
+            <p>"Happy to found this agency to arrange our holiday in Bali. Thankyou for making it as a best trip."</p>
+            <h3>SOPHIA</h3>
+        </div>
+        <div class="testimonial">
+            <img src="https://i.ibb.co/nBDvBN4/men.jpg" alt="Customer 2">
+            <p>"Excellent Hospitallity and very reasonable rates.Enjoyed my journey a lot."</p>
+            <h3>GILBERT WARREN</h3>
+        </div>
+        <!-- Add more testimonials as needed -->
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>Have a Question or Need Assistance?</p>
+    </div>
+</footer>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <div class="contact-content">
+            <div class="contact-form">
+                <form class="vertical-form" action="https://submit-form.com/T873eyjzt">
+                    <label for="first-name">First name</label>
+                    <input id="first-name" name="first-name" type="text" />
+                    <label for="last-name">Last name</label>
+                    <input id="last-name" name="last-name" type="text" />
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" cols="30" rows="5"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="contact-image">
+                <img src="https://i.ibb.co/bzfSyFt/contact1.jpg" alt="Contact Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024TAKEATRIP. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+</body>
+</html>
+
